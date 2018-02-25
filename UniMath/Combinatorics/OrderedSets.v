@@ -629,7 +629,7 @@ Definition isComputablyOrdered {X:hSet}
   unit.
 
 Local Ltac expand ic :=
-  induction ic as
+  induction (ic) as
     [[[[transle reflle]antisymmle][lub[glb _]]]
        [[transltle [translelt _]][translt[irrefl[cotrans _]]]]].
 
