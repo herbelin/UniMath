@@ -548,7 +548,7 @@ Proof.
   intros D D' a.
   use tpair.
   - intro c. simpl.
-    exact (pr1 a c).
+    exact (pr1 a).
   - abstract (
         intros x y f; cbn in *;
         apply funextsec; intro d;
